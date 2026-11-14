@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LegisPixel: A Lei do Povo</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="game">
+  <button id="mute" aria-label="Som">🔊</button>
+  <header id="hud" hidden>
+    <span class="hud-title">Assinaturas</span>
+    <div class="meter"><i id="meter-fill"></i><b class="mark"></b></div>
+    <span id="hud-count">0/3</span>
+  </header>
+
+  <div id="stage">
+    <canvas id="screen" width="640" height="360"></canvas>
+    <div id="prompt" hidden>[E] conversar</div>
+    <div id="banner" hidden></div>
+  </div>
+
+  <section id="dialog" hidden>
+    <canvas id="face" width="72" height="72"></canvas><div id="dbody"><h2 id="speaker"></h2>
+    <p id="text"></p>
+    <div id="options"></div>
+    <button id="next" class="btn">Continuar</button></div>
+  </section>
+
+  <section id="title">
+    <h1>LegisPixel</h1>
+    <p>Você é o Deputado Carlos. Leve uma lei do plenário até as ruas e de volta ao plenário.</p>
+    <button id="start" class="btn">Começar</button>
+  </section>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
